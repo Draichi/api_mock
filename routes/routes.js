@@ -2,6 +2,26 @@ var emoji = require('emojic')
 var colorIt = require('color-it')
 
 var appRouter = app => {
+  app.post('/ca/job-opening/1/apply/email', (req, res) => {
+    res.send({
+      eae: 'mano'
+    })
+    console.log(' ' + colorIt('> /login com email ').sunFlower(), emoji.fire)
+  })
+
+  app.post('/ca/job-opening/1/apply/facebook', (req, res) => {
+    res.send({
+      eae: 'mano facebook'
+    })
+    console.log(' ' + colorIt('> /login com facebook ').sunFlower(), emoji.fire)
+  })
+
+  app.post('/ca/job-opening/1/apply/linkedin', (req, res) => {
+    res.send({
+      eae: 'mano linkedin'
+    })
+    console.log(' ' + colorIt('> /login com linkedin ').sunFlower(), emoji.fire)
+  })
   app.get('/cover', (_, res) => {
     res.send({
       cover: {
@@ -9,7 +29,7 @@ var appRouter = app => {
       type: 'full-api-time',
       salary: '6700/api',
       location: 'Sao paulo, api',
-      description: 'API lorem API lorem API lorem API lorem API lorem API lorem API lorem '
+      description: 'API dsfs dfs dfsdfsdofisjidfjsiodjfsiod jsj iojsdoifjsiojdfiosjdifjsdpofkpogkfdop gdf kgodkfg odfk isojd iofj soidjf oisjfdisjdifj sidjfosi disfj soidjf sodifj sodijfosijdfi sdgopdkfogkdofg dofkgodkfg ofkgodkg dfgd fglorem API lorem API lorem API lorem API lorem API lorem API lorem '
       }
     })
     console.log(' ' + colorIt('> /cover ').sunFlower(), emoji.fire)
