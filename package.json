@@ -17,7 +17,7 @@
     "emojic": "^1.1.15",
     "express": "^4.17.1",
     "express-force-https": "^1.0.0",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^6.0.0",
     "jsonwebtoken": "^8.5.1"
   }
 }
